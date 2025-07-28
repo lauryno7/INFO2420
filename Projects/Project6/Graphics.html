@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+#thumbs, #image {
+  width: 700px; 
+  border: solid 1px #000;
+  text-align: center; 
+  margin: 0 auto 0 auto; 
+  color: #000; 
+  background: #eee;
+  padding: 5px;
+}
+#thumbs {
+  margin-top: 10px;
+}
+#thumbs img {
+  border: solid 1px #000;
+  margin: 5px;
+}
+#image {
+  height: 400px;
+}
+.instructions {
+  font-style: italic;
+}
+</style>
+<script>
+function preloadImages() {
+    var img1 = new Image();
+    img1.src = "Images/print1.jpg";
+    var img2 = new Image();
+    img2.src = "Images/print2.jpg";
+}
+</script>
+</head>
+
+<body onload="preloadImages()">
+<div>
+    <a href="" 
+       onmouseover="document.getElementById('print').src='Images/print2.jpg';"
+       onmouseout="document.getElementById('print').src='Images/print1.jpg';">
+        <img src="Images/print1.jpg" alt="Print Page" width="200" height="50" id="print">
+    </a>
+</div>
+
+<div>
+    <a href=""
+       onmouseover="document.getElementById('logo').src='Images/Logo2.jpg';"
+       onmouseout="document.getElementById('logo').src='Images/Logo1.jpg';">
+        <img src="Images/Logo1.jpg" alt="Logo" id="logo">
+    </a>
+</div>
+
+<img src="Images/2colback.png" alt="Background">
+
+</body>
+</html>
