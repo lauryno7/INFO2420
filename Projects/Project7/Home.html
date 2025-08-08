@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backyard Birds Home Page</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myscript.js"></script>
+</head>
+<body onload="preloadImages()">
+
+<header>
+    <a href="index.html" onmouseover="document.logo.src=logo2.src;"
+       onmouseout="document.logo.src=logo1.src;">
+        <img src="Images/Logo1.png" width="150" height="175"
+             name="logo" alt="Logo" style="border:solid thick #808080;">
+    </a>
+    <img src="Images/banner.png" alt="Banner" height="175" width="505" style="border: solid thick #808080;">
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="Tributes.html">Tributes</a>
+        <a href="SurveyPage.html">Survey</a>
+        <a href="Favorites.html">Favorites</a>
+    </nav>
+</header>
+
+<section>
+    <article>
+    <h1>Backyard Birds of Utah</h1>
+    <p>
+        Backyard Birds of Utah is your source for birdwatching tips, profiles, and community stories. Explore our site to discover the beauty and diversity of Utah's backyard birds!
+    </p>
+
+    <h2>Featured Birds</h2>
+    <div id="thumbs">
+        <img src="Images/BaldEagleSm.jpg" alt="Bald Eagle" onmouseover="swapImage(0);" width="120">
+        <img src="Images/CardinalSmall.jpg" alt="Cardinal" onmouseover="swapImage(1);" width="120">
+        <img src="Images/GeeseSmall.jpg" alt="Geese" onmouseover="swapImage(2);" width="120">
+        <img src="Images/HawkSm.jpg" alt="Hawk" onmouseover="swapImage(3);" width="120">
+    </div>
+
+    <div id="image">
+        <img id="theImage" src="Images/BaldEagleSm.jpg" alt="Bald Eagle" width="350">
+        <h3 id="bottomText">Bald Eagle</h3>
+    </div>
+
+    <h2>Customer Tribute</h2>
+    <div class="mini-tribute">
+        <img src="Images/HawkSm.jpg" alt="Customer's Favorite Bird" width="100" height="75" style="float:left; margin-right:10px;">
+        <p>
+            "Wow!!! Who would have thought all these birds live in Utah.... It is very rare to have some of these big raptors show up in your own yard." <a href="Tributes.html">More &gt;&gt;</a>
+        </p>
+    </div>
+    </article>
+</section>
+
+<footer class="center">
+    <h5>This web site has been created solely for educational purposes.</h5>
+    <h5><a href="mailto:lauryn.olson@gmail.com">lauryn.olson@gmail.com</a></h5>
+</footer>
+
+</body>
+</html>
